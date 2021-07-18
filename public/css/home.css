@@ -1,0 +1,78 @@
+body{
+    background-color: #FAFAFA;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.container{
+    margin: auto;
+    margin-top: 20%;
+    width: 45%;
+    min-width:350px;
+    max-width:700px;
+}
+.container form{
+    margin-top: 10px;
+}
+.container form input{
+    width: 80%;
+    border: 1px solid #BFC4C8;
+    border-radius: 3px;
+    padding: 3px;
+    font-size: 12px;
+    color: #7e7e7e;
+}
+.container form button{
+    width: 15%;
+    background-color: #9B4DCA;
+    border-radius: 3px;
+    border: none;
+    padding: 3px;
+    float: right;
+    font-size: 12px;
+    color: #FAFAFA;
+}
+.container form button:hover{
+    background-color: #8e36c5;
+    transition: 1s;
+}
+.container form .shortnerlink{
+    border: 1px solid #BFC4C8;
+    border-radius: 3px;
+    margin-top: 10px;
+    padding: 3px;
+    color: #575757
+}
+.container ul{
+    width: 115px;
+    margin: auto;
+}
+.container ul li{
+    display: inline-block;
+    margin: 10px 10px;
+}
+.container ul li .fa{
+    font-size: 20px;
+}
+.container ul li .fa-github{
+    color: rgba(44, 44, 44, 0.664);
+}
+.container ul li .fa-github:hover{
+    color: rgb(0, 0, 0);
+}
+.container ul li .fa-instagram{
+    color: #d00000b9;
+}
+.container ul li .fa-instagram:hover{
+    color: #d00000;
+}
+.container ul li .fa-telegram{
+    color: #0095c7b2;
+}
+.container ul li .fa-telegram:hover{
+    color: #023e8a;
+}
+.thisIsYourEndPoint{
+    color: #BFC4C8;
+    margin-top: 10px;
+    font-size: 20px;
+}

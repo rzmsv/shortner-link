@@ -1,0 +1,30 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="stylesheet" href="font/font-awesome-4.7.0/css/font-awesome.css")
+        link(rel="stylesheet", href="css/reset.css")
+        link(rel="stylesheet", href="css/home.css")
+        title #{title}
+    body 
+        .container 
+            p.thisIsYourEndPoint Enter a long URL to make a TinyURL
+            form(action="/", method="post") 
+                input(type="url" name="originalLInk" placeholder="insert your link ...")
+                button Shorten
+                ul 
+                    li  
+                        a(href="https://github.com/rzmsv") 
+                            i.fa.fa-github(aria-hidden="true")
+                    li
+                        a(href="https://www.instagram.com/beat.mind/") 
+                            i.fa.fa-instagram(aria-hidden="true")
+                    li
+                        a(href="https://t.me/rezaaaa1989") 
+                            i.fa.fa-telegram(aria-hidden="true")
+                if shortnerLink
+                    p.thisIsYourEndPoint This Is Your Endpoint
+                    p.shortnerlink #{shortnerLink}

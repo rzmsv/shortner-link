@@ -1,0 +1,35 @@
+version: '3.5'
+services: 
+  db:
+    image: postgres:12.1
+    container_name: URLSHR-db
+    environment:
+      POSTGRES_USER: ${db_user}
+      POSTGRES_PASSWORD: ${db_pass}
+      POSTGRES_DB: ${db_name}
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    networks:
+      - urlshr
+    restart: always
+    ports:
+      - 54322:5432
+
+  app:
+    build: .
+    restart: always
+    container_name: URLSHR-app
+    environment:
+      WAIT_HOSTS: db:5432
+    volumes:
+      - /usr/src/app/node_modules
+    networks:
+      - urlshr
+    ports:
+      - 8080:8080
+
+volumes:
+  db-data:
+
+networks: 
+  urlshr:
