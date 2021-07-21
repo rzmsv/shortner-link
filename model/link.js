@@ -53,6 +53,14 @@ module.exports = class link {
       console.log(error);
     }
   }
+  static async countDatabase() {
+    try {
+      const result = await pool.query("SELECT COUNT(*) From links")
+      return result.rows[0].count
+    } catch (error) {
+      console.log(error);
+    }
+  }
   static async searchShorterLink(id) {
     try {
       const result = await pool.query("SELECT * FROM links WHERE shorter_link=$1", [id])
