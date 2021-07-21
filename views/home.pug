@@ -14,7 +14,7 @@ html(lang="en")
         .container 
             p.thisIsYourEndPoint Enter a long URL to make a TinyURL
             if countDatabase
-                p.countDatabase Number of links in database: #{countDatabase}
+                p.countDatabase Total of links in database: #{countDatabase}
             form(action="/", method="post") 
                 input(type="url" name="originalLInk" placeholder="insert your link ...")
                 input(type="hidden" name="_csrf" value=csrfToken)
