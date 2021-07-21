@@ -25,4 +25,3 @@ psql -h localhost -p 5432 -U postgres <<your database name >>
 ***
 ## Public service
 This app is single page web app and currently is available at http://urlshr.ir and also you can use in tablet and mobile because is simple responsive 
-***
