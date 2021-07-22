@@ -2,7 +2,6 @@ const express = require('express');
 const http = require('http')
 const cookieParser = require('cookie-parser')
 const session = require('express-session')
-const helmet = require("helmet");
 const cors = require('cors')
 const app = express()
 const path = require("path")
@@ -25,7 +24,6 @@ app.use(session({
   resave: true,
   saveUninitialized: true,
 }))
-app.use(helmet());
 app.use(cookieParser())
 app.use(cors())
 app.use(express.static(path.join(__dirname, "../public")))
