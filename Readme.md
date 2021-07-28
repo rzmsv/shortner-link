@@ -1,4 +1,4 @@
-# Link Shortner
+# Link Shortener
 App for shortner all long URL
 
 ## Description
