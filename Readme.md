@@ -2,7 +2,7 @@
 App for shortner all long URL
 
 ## Description
-Whit the help of this app you can convert all of long URL to tiny URL, It's help to you when you need tiny URL for give your friends in Social Media or prefer use in you'r own Website.
+With the help of this app you can convert all of long URL to tiny URL, It's help to you when you need tiny URL for give your friends in Social Media or prefer use in you'r own Website.
 ***
 ## Getting Start
 1. Install docker and docker-compose,
